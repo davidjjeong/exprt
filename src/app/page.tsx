@@ -11,7 +11,12 @@ export default function Home() {
           height={54}
           priority
         />
-        <h1>Your Go-to Expert for Your Expenses.</h1>
+        <h1 className="font-bold text-6xl">
+          Your Go-to <span className="text-[#01FF70]">Exp</span>ense
+          <br/>
+          Expe<span className="text-[#01FF70]">rt</span>.
+        </h1>
+        <p className="text-lg">Sign up to track your spending in multi-currencies simulataneously with <br />sleek, user-friendly UI.</p>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#01FF70] text-foreground gap-2 hover:brightness-125 transition duration-300 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
