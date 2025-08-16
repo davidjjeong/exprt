@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="p-4">
+          <Image
+            src="/exprt.png"
+            alt="Exprt logo"
+            width={120}
+            height={36}
+            priority
+          />
+        </header>
         {children}
       </body>
     </html>
